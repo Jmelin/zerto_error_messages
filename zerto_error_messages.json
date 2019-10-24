@@ -1,0 +1,787 @@
+{
+   "BCK0001": {
+      "Alert Name": "Long Term Retention fails",
+      "Severity": "Warning",
+      "Alert Description": "The VPG is defined with Long Term Retention but Retention processes have failed for the last 3 days, including attempted retries."
+   },
+   "BCK0002": {
+      "Alert Name": "Long Term Retention fails",
+      "Severity": "Error",
+      "Alert Description": "The VPG is defined with Long Term Retention but Retention processes have failed for the last 7 days, including attempted retries"
+   },
+   "BCK0005": {
+      "Alert Name": "Long Term Retention repository disconnected",
+      "Severity": "Error/Warning",
+      "Alert Description": "The repository is not accessible by the VBA. If the repository stored Retention processes then an error alert is issued, otherwise, a warning is issued."
+   },
+   "BCK0006": {
+      "Alert Name": "Long Term Retention repository disconnected",
+      "Severity": "Error",
+      "Alert Description": "The VBA is not accessible. If there are VPGs that are affected, these VPGs are listed"
+   },
+   "BCK0007": {
+      "Alert Name": "Long Term Retention repository not defined",
+      "Severity": "Warning",
+      "Alert Description": "The VPG is defined with Long Term Retention but a repository cannot be found to specify for the VPG and therefore Retention processes cannot be performed."
+   },
+   "LIC0001": {
+      "Alert Name": "License exceeded",
+      "Severity": "Warning",
+      "Alert Description": "Your license restricts you to protecting a maximum number of virtual machines and you have reached 80% of this number or have exceeded this number"
+   },
+   "LIC0002": {
+      "Alert Name": "License exceeded",
+      "Severity": "Warning",
+      "Alert Description": "Your license restricts you to protect virtual machines using a maximum number of CPU sockets and you are close to or have exceeded this number."
+   },
+   "LIC0003": {
+      "Alert Name": "License about to expire",
+      "Severity": "Warning",
+      "Alert Description": "Your license is close to its expiration date."
+   },
+   "LIC0004": {
+      "Alert Name": "License expired and exceeded",
+      "Severity": "Warning",
+      "Alert Description": "Your license is passed its expiration date and you are protecting more virtual machines than the license permits."
+   },
+   "LIC0005": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "LIC0006": {
+      "Alert Name": "License expired",
+      "Severity": "Warning",
+      "Alert Description": "Your license is passed its expiration date."
+   },
+   "LIC0007": {
+      "Alert Name": "License exceeded",
+      "Severity": "Warning",
+      "Alert Description": "You are protecting more virtual machines than the license permits."
+   },
+   "LIC0008": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "LIC0009": {
+      "Alert Name": "Public cloud replication not supported",
+      "Severity": "Error",
+      "Alert Description": "Your current license does not support Public Cloud replication. Contact your account manager to upgrade."
+   },
+   "LIC0010": {
+      "Alert Name": "vCD not supported",
+      "Severity": "Error",
+      "Alert Description": "Your current license does not support vCD. For more details contact your account manager."
+   },
+   "LIC0011": {
+      "Alert Name": "Cross hypervisor replication not supported",
+      "Severity": "Error",
+      "Alert Description": "Your current license does not support cross hypervisor replication. For more details contact your account manager."
+   },
+   "LIC0012": {
+      "Alert Name": "Billing usage warning",
+      "Severity": "Warning",
+      "Alert Description": "YZVM did not send billing usage to the Zerto servers. If this issue is not resolved in the specified days, your site will cease to be protected."
+   },
+   "LIC0013": {
+      "Alert Name": "Critical billing usage warning",
+      "Severity": "Error",
+      "Alert Description": "YZVM did not send billing usage to the Zerto servers. Your site is not protected until this issue is resolved."
+   },
+   "STR0001": {
+      "Alert Name": "Datastore not accessible",
+      "Severity": "Error",
+      "Alert Description": "The hypervisor manager reports that the specified storage holding either a recovery disk or a journal disk is inaccessible."
+   },
+   "STR0002": {
+      "Alert Name": "Datastore full",
+      "Severity": "Error",
+      "Alert Description": "The storage has too little free space remaining. Until the issue is resolved further protection of the virtual machines being recovered to this storage cannot continue."
+   },
+   "STR0004": {
+      "Alert Name": "Datastore low in space",
+      "Severity": "Warning",
+      "Alert Description": "The storage is close to its minimum of free space. If the issue is not resolved, protection of the virtual machines being recovered to this storage will stop when the limit is reached."
+   },
+   "VCD0001": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The underlying vCenter Server for the Org vDC is not found."
+   },
+   "VCD0002": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The Org vDC is defined in more than one underlying vCenter Server."
+   },
+   "VCD0003": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The Org vDC storage profile specified exists in vCD but cannot be found in the underlying vCenter Server."
+   },
+   "VCD0004": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The provider vDC storage profile specified exists in vCD but cannot be found in the underlying vCenter Server."
+   },
+   "VCD0005": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The network information required by Zerto cannot be retrieved."
+   },
+   "VCD0006": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "A problem occurred with Zerto accessing the provider vDC metadata it has in the recovery site. The problem should fix itself in a few minutes"
+   },
+   "VCD0007": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The connection to vCD was dropped, so the required resource pools for the Org vDC could not be retrieved."
+   },
+   "VCD0010": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The network information required by Zerto cannot be retrieved."
+   },
+   "VCD0014": {
+      "Alert Name": "vCD disconnection",
+      "Severity": "Error",
+      "Alert Description": "Access to vCD could not be established."
+   },
+   "VCD0015": {
+      "Alert Name": "AMQP-server disconnection",
+      "Severity": "Error",
+      "Alert Description": "The connection to the AMQP server in vCD failed, even though the connection to vCD itself succeeded."
+   },
+   "VCD0016": {
+      "Alert Name": "Provider vDC datastore not found",
+      "Severity": "Error",
+      "Alert Description": "Access to the datastore cannot be established for the provider vDC."
+   },
+   "VCD0017": {
+      "Alert Name": "vCloud Director",
+      "Severity": "Error",
+      "Alert Description": "The metadata for the Org vDC in vCD could not be extracted. The Org vDC is ignored."
+   },
+   "VCD0018": {
+      "Alert Name": "Duplicated MAC addresses",
+      "Severity": "Error",
+      "Alert Description": "The same MAC address is used by more than one NIC for the virtual machine"
+   },
+   "VCD0020": {
+      "Alert Name": "VM inconsistency in vApp",
+      "Severity": "Error",
+      "Alert Description": "The list of virtual machines registered to the vApp does not match the actual virtual machines in the vApp"
+   },
+   "VCD0021": {
+      "Alert Name": "VM inconsistency in vApp",
+      "Severity": "Error",
+      "Alert Description": "One of the entities registered to the vApp does not exist."
+   },
+   "VCD0022": {
+      "Alert Name": "vCD Protection group missing VM",
+      "Severity": "Error",
+      "Alert Description": "A VPG was paused by the system because a single or multiple virtual machines were removed from the inventory."
+   },
+   "VPG0003": {
+      "Alert Name": "VPG has low journal history",
+      "Severity": "Warning",
+      "Alert Description": "During a synchronization, the latest changes in the protection site are added to the journal and older data in the journal is moved to the mirror virtual disk managed by the VRA for the virtual machine. As the synchronization continues and more old data is moved out of the journal, the checkpoints associated with the data are also removed from the journal and new checkpoints are not added to the journal."
+   },
+   "VPG0004": {
+      "Alert Name": "VPG has low journal history",
+      "Severity": "Error",
+      "Alert Description": "During a synchronization, the latest changes in the protection site are added to the journal and older data in the journal is moved to the mirror virtual disk managed by the VRA for the virtual machine. As the synchronization continues and more old data is moved out of the journal, the checkpoints associated with the data are also removed from the journal and new checkpoints are not added to the journal."
+   },
+   "VPG0005": {
+      "Alert Name": "VPG in error state",
+      "Severity": "Error",
+      "Alert Description": "The VPG has entered an error state which cannot be fixed"
+   },
+   "VPG0006": {
+      "Alert Name": "VPG missing configuration details",
+      "Severity": "Error",
+      "Alert Description": "Some of the VPG configuration is not valid and has to be updated."
+   },
+   "VPG0007": {
+      "Alert Name": "VPG replication paused",
+      "Severity": "Error",
+      "Alert Description": "A VPG is being synchronized and if the synchronization continues it will cause all the checkpoints in the journal to be removed. During the synchronization, the latest changes in the protection site are added to the journal and older data in the journal was moved to the mirror virtual disk managed by the VRA for the virtual machine. As the synchronization continues and more old data is moved out of the journal, the checkpoints associated with the data are also removed from the journal and new checkpoints are not added. If the synchronization continues for too long, all the checkpoints can be removed from the journal meaning all recovery operations can no longer be performed."
+   },
+   "VPG0008": {
+      "Alert Name": "VPG rollback failed",
+      "Severity": "Error",
+      "Alert Description": "During a Failover or Move operation, before committing the recovery the decision was taken to roll back the recovery, either manually or automatically"
+   },
+   "VPG0009": {
+      "Alert Name": "VPG target RPO exceeded",
+      "Severity": "Warning",
+      "Alert Description": "The IOs are not being replicated fast enough and this is causing the current RPO for the VPG to be between 15% and 25% more than the target RPO specified in the VPG SLA settings."
+   },
+   "VPG0010": {
+      "Alert Name": "VPG target RPO exceeded",
+      "Severity": "Error",
+      "Alert Description": "The IOs are not being replicated fast enough and this is causing the current RPO for the VPG to be at least 25% more than the target RPO specified in the VPG SLA settings"
+   },
+   "VPG0011": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0012": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0014": {
+      "Alert Name": "VPG waiting for commit or rollback",
+      "Severity": "Warning",
+      "Alert Description": "A Failover or Move operation has been performed and the VPG is waiting for the operation to either be committed or rolled back."
+   },
+   "VPG0015": {
+      "Alert Name": "Resources not enough to support VPG",
+      "Severity": "Warning",
+      "Alert Description": "The resource pool used for the recovery for the VPG does not have enough resources to recover all the virtual machines in the VPG."
+   },
+   "VPG0016": {
+      "Alert Name": "Resources pool not found",
+      "Severity": "Error",
+      "Alert Description": "The recovery resource pool has been removed and there is nowhere for the VPG to recover to."
+   },
+   "VPG0017": {
+      "Alert Name": "VPG protection paused",
+      "Severity": "Warning",
+      "Alert Description": "During periods when the WAN bandwidth is utilized to its maximum, you can pause the protection of a VPG, to free-up some of this bandwidth. After pausing the protection, the VPG can still be recovered, to the last checkpoint written to the journal before the pause operation."
+   },
+   "VPG0018": {
+      "Alert Name": "VMs in VPG not configured with a storage policy",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available to the Org vDC is no longer available. Any storage policy that is currently available to the Org vDC does not include the relevant datastores."
+   },
+   "VPG0019": {
+      "Alert Name": "VPG recovery storage policy disabled",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available to the Org vDC was disabled. The VPGs cannot be recovered."
+   },
+   "VPG0020": {
+      "Alert Name": "VPG recovery storage policy not found",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available to the Org vDC is no longer available. Any storage policy that is currently available to the Org vDC does not include the relevant datastores. The VPGs cannot be recovered."
+   },
+   "VPG0021": {
+      "Alert Name": "VPG recovery storage policy not found",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available to the Provider vDC is no longer available. Any storage policy that is currently available to the Provider vDC does not include the relevant datastores. The VPGs cannot be recovered."
+   },
+   "VPG0022": {
+      "Alert Name": "VPG recovery storage policy disabled",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available to the Provider vDC was disabled. The VPGs cannot be recovered."
+   },
+   "VPG0023": {
+      "Alert Name": "VPG recovery storage profile not found",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that was originally available in the Provider vDC cannot be found. The VPGs cannot be recovered."
+   },
+   "VPG0024": {
+      "Alert Name": "VPG storage policy does not include active datastores",
+      "Severity": "Error",
+      "Alert Description": "The storage policy that is used for recovery no longer includes the datastores that were being used."
+   },
+   "VPG0025": {
+      "Alert Name": "vCD vApp network mapping not defined",
+      "Severity": "Warning",
+      "Alert Description": "The VPGs are being recovered in vCD but there is no mapping for the vApp networks. During recovery, the vCD vApps will be created but will not be accessible."
+   },
+   "VPG0026": {
+      "Alert Name": "VPG recovery storage profile changed",
+      "Severity": "Warning",
+      "Alert Description": "The service profile used to determine the VPG SLA no longer exists. The existing SLA values in the VPG will continue to be used, for example the default journal history and test frequency reminder until you edit the VPG to use a valid service profile."
+   },
+   "VPG0027": {
+      "Alert Name": "VPG includes VMs that are no longer protected",
+      "Severity": "Warning",
+      "Alert Description": "One or more of the virtual machines in the VPG is no longer being protected. This can occur due to a number of reasons, such as the VRA on the host of a specific virtual machine was removed, or the virtual machine was moved to a different host without a VRA installed."
+   },
+   "VPG0028": {
+      "Alert Name": "Corrupted Org vDC network mapping",
+      "Severity": "Error",
+      "Alert Description": "The network mapping settings for the Org vDC defined in the VPG has become corrupted."
+   },
+   "VPG0035": {
+      "Alert Name": "VPG protected resources not in ZORG",
+      "Severity": "Warning",
+      "Alert Description": "The VPG is defined for a specific Zerto Organization, ZORG, but the resources specified for this ZORG in the Zerto Cloud Manager do not include the resources used by the protected virtual machines in the VPG."
+   },
+   "VPG0036": {
+      "Alert Name": "VPG recovery resources not in ZORG",
+      "Severity": "Warning",
+      "Alert Description": "The VPG is defined for a specific Zerto Organization, ZORG, but the resources specified for this ZORG in the Zerto Cloud Manager do not include the resources assigned for the recovery of the virtual machines in the VPG."
+   },
+   "VPG0037": {
+      "Alert Name": "Journal history is compromised",
+      "Severity": "Warning",
+      "Alert Description": "When a virtual machine journal becomes full, Zerto starts to move data to the recovery disks. Once this begins, the maintained history begins to decrease. If the journal history falls below 75% of the value specified for the Default Journal History parameter, a warning alert is issued in the GUI."
+   },
+   "VPG0038": {
+      "Alert Name": "Journal history is compromised",
+      "Severity": "Error",
+      "Alert Description": "The amount of time specified for the journal is more than the current amount of time, in minutes."
+   },
+   "VPG0039": {
+      "Alert Name": "RDM has an odd number of blocks",
+      "Severity": "Error",
+      "Alert Description": "RDM disks with an odd number of blocks can only replicate to RDM disks of the same size with an odd number of blocks and not to VMDKs"
+   },
+   "VPG0040": {
+      "Alert Name": "Virtual machine hardware mismatch with recovery site",
+      "Severity": "Error",
+      "Alert Description": "The hardware version of one or more of the protected virtual machines is not supported by the version of the recovery host on the recovery site. These virtual machines cannot be powered on in the recovery site after a recovery operation."
+   },
+   "VPG0041": {
+      "Alert Name": "Virtual machine running Windows 2003",
+      "Severity": "Error",
+      "Alert Description": "Virtual machines with the Windows Server 2003 operating system being replicated to vCD version 5.5, when guest customization is specified for the VPG, lose the domain setting the virtual machine to be dropped from the domain."
+   },
+   "VPG0042": {
+      "Alert Name": "Recovery network not found",
+      "Severity": "Error",
+      "Alert Description": "The network to use during a recovery operation is not found."
+   },
+   "VPG0043": {
+      "Alert Name": "Cross-replication",
+      "Severity": "Warning",
+      "Alert Description": "Due to Microsoft default SAN policy, the volumes for the virtual machine in the VPG might become offline upon recovery."
+   },
+   "VPG0044": {
+      "Alert Name": "Cross-replication",
+      "Severity": "Error",
+      "Alert Description": "One or more of the virtual machines in the VPG has a disk with size 0."
+   },
+   "VPG0045": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0046": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0047": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0048": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VPG0049": {
+      "Alert Name": "Protection group missing VM",
+      "Severity": "Error",
+      "Alert Description": "A VPG was paused by the system because a single or multiple virtual machines were removed from the inventory."
+   },
+   "VPG0050": {
+      "Alert Name": "Protection Group Tested Alert",
+      "Severity": "Warning",
+      "Alert Description": "You have {0} VPGs that did not have failover test in the last {1} months. Affected VPGs are: VPG1, VPG2, VPG3 -Or- You have {0} VPGs that did not have failover test at the configured testing time. Affected VPGs are: VPG1, VPG2, VPG3"
+   },
+   "VPG0051": {
+      "Alert Name": "Stopping Failover Test Operation Failed",
+      "Severity": "Error",
+      "Alert Description": "The System is trying to stop the Failover test operation of VPG , but cannot complete this task."
+   },
+   "VPG0052": {
+      "Alert Name": "Rolling back Failover Live Operation Failed",
+      "Severity": "Error",
+      "Alert Description": "The System is trying to rollback the Failover live operation of VPG , but cannot complete this task."
+   },
+   "VPG0053": {
+      "Alert Name": "Rolling back Move Operation Failed",
+      "Severity": "Error",
+      "Alert Description": "The System is trying to rollback the Move operation of VPG , but cannot complete this task."
+   },
+   "VPG0054": {
+      "Alert Name": "Recovery storage policy per volume is not supported",
+      "Severity": "Warning",
+      "Alert Description": "Storage Policy per volume is not supported in OrgVDCs with FAST Provisioning enabled."
+   },
+   "VPG0055": {
+      "Alert Name": "Protected and recovery volumes sizes mismatch",
+      "Severity": "Error",
+      "Alert Description": "Due to some inconsistency, the protected volume size and recovery volume size are not equal."
+   },
+   "VRA0001": {
+      "Alert Name": "Host without VRA",
+      "Severity": "Warning",
+      "Alert Description": "The host in the cluster does not have a VRA installed. Any protected virtual machine that is vMotioned to this hosts will cause the VPG to stop protecting all the virtual machine."
+   },
+   "VRA0002": {
+      "Alert Name": "VRA without IP",
+      "Severity": "Error",
+      "Alert Description": "You can install a VRA by specifying a static IP address for the VRA virtual machine, which is recommended, or by specifying that the DHCP server should allocate the IP address. The DHCP option was selected when installing the VRA but the DHCP server failed to allocate an IP address to the VRA."
+   },
+   "VRA0003": {
+      "Alert Name": "Host IP changes",
+      "Severity": "Error",
+      "Alert Description": "You can install a VRA by specifying a static IP address for the VRA virtual machine, which is recommended, or by specifying that the DHCP server should allocate the IP address. The DHCP option was selected when installing the VRA and the VRA was installed successfully but later on the DHCP server changed the IP address for the VRA."
+   },
+   "VRA0004": {
+      "Alert Name": "VRA lost IP",
+      "Severity": "Error",
+      "Alert Description": "Access to the VRA is not possible via the IP that the Zerto Virtual Manager uses for the VRA."
+   },
+   "VRA0005": {
+      "Alert Name": "VRAs not connected",
+      "Severity": "Error",
+      "Alert Description": "The local VRA cannot communicate with the peer site VRA to send data for recovery."
+   },
+   "VRA0006": {
+      "Alert Name": "Datastore for journal disk is full",
+      "Severity": "Error",
+      "Alert Description": "The datastore is nearing capacity and has no more room for updates to the journal. This alert is triggered when the datastore space for the journal falls below 30GB or 15%, whichever is smaller."
+   },
+   "VRA0007": {
+      "Alert Name": "I/O error to journal",
+      "Severity": "Error",
+      "Alert Description": "The VRA cannot write to the journal."
+   },
+   "VRA0008": {
+      "Alert Name": "Recovery disk and VMs missing",
+      "Severity": "Error",
+      "Alert Description": "The recovery disks for the a protected virtual machine managed by the VRA cannot be found. This should never happen."
+   },
+   "VRA0009": {
+      "Alert Name": "Recovery disk missing",
+      "Severity": "Error",
+      "Alert Description": "The recovery disk managed by the VRA for the a protected virtual machine cannot be found. This should never happen."
+   },
+   "VRA0010": {
+      "Alert Name": "Recovery disks turned off",
+      "Severity": "Error",
+      "Alert Description": "After a recovery operation the recovery disks for the recovered virtual machine cannot be accessed because the virtual machine is not powered on."
+   },
+   "VRA0011": {
+      "Alert Name": "Recovery disk inaccessible",
+      "Severity": "Error",
+      "Alert Description": "After a recovery operation the recovery disks for the recovered virtual machine cannot be accessed."
+   },
+   "VRA0012": {
+      "Alert Name": "Cannot write to recovery disk",
+      "Severity": "Error",
+      "Alert Description": "The datastore for the virtual machines in the recovery site is almost full and no writes can be committed to it for the specified virtual machine."
+   },
+   "VRA0013": {
+      "Alert Name": "I/O error to recovery disk",
+      "Severity": "Error",
+      "Alert Description": "There are IO errors generated when writing to the recovered virtual machine recovery disks."
+   },
+   "VRA0014": {
+      "Alert Name": "Cloned disks turned off",
+      "Severity": "Error",
+      "Alert Description": "The cloned virtual machine is not powered on and the disks for this machine cannot be updated by the VRA."
+   },
+   "VRA0015": {
+      "Alert Name": "Cloned disk inaccessible",
+      "Severity": "Error",
+      "Alert Description": "The disks of the cloned virtual machine are inaccessible."
+   },
+   "VRA0016": {
+      "Alert Name": "Datastore for clone disk is full",
+      "Severity": "Error",
+      "Alert Description": "The disks of the cloned virtual machine are on a datastore that is nearly full, preventing the cloned disks from being updated."
+   },
+   "VRA0017": {
+      "Alert Name": "I/O error to clone",
+      "Severity": "Error",
+      "Alert Description": "There are IO errors generated when writing to the cloned virtual machine recovery disks."
+   },
+   "VRA0018": {
+      "Alert Name": "Protected disk and VM missing",
+      "Severity": "Error",
+      "Alert Description": "A protected virtual machine in the VPG was removed."
+   },
+   "VRA0019": {
+      "Alert Name": "Protected disk missing",
+      "Severity": "Warning",
+      "Alert Description": "A protected virtual machine volume was removed."
+   },
+   "VRA0020": {
+      "Alert Name": "VM powered off",
+      "Severity": "Error",
+      "Alert Description": "A protected virtual machine in the VPG is powered off and synchronization of this virtual machine with the recovery site cannot continue. This affects the whole VPG as the synchronization for the whole VPG is halted."
+   },
+   "VRA0021": {
+      "Alert Name": "VM disk inaccessible",
+      "Severity": "Error",
+      "Alert Description": "A virtual machine disk cannot be accessed."
+   },
+   "VRA0022": {
+      "Alert Name": "VM disk incompatible",
+      "Severity": "Error",
+      "Alert Description": "A protected virtual machine has had a disk added that is not supported by Zerto, resulting in the VPG not being protected."
+   },
+   "VRA0023": {
+      "Alert Name": "VRA cannot be registered.",
+      "Severity": "Error",
+      "Alert Description": "A problem is preventing the VRA from being installed on the host."
+   },
+   "VRA0024": {
+      "Alert Name": "VRA removed",
+      "Severity": "Error",
+      "Alert Description": "A VRA or shadow VRA was removed even though it had recovery disks that it was managing, creating a ghost VRA."
+   },
+   "VRA0025": {
+      "Alert Name": "I/O synchronization",
+      "Severity": "Error",
+      "Alert Description": "A virtual machine disk cannot be synced because of one of its disks."
+   },
+   "VRA0026": {
+      "Alert Name": "Recovery disk removed",
+      "Severity": "Error",
+      "Alert Description": "A recovery disk attached to a virtual machine in a VPG has been removed."
+   },
+   "VRA0027": {
+      "Alert Name": "Journal volume removed",
+      "Severity": "Error",
+      "Alert Description": "A journal volume attached to a virtual machine in a VPG has been removed."
+   },
+   "VRA0028": {
+      "Alert Name": "VRA powered off",
+      "Severity": "Error/Warning",
+      "Alert Description": "An error is issued when a VRA on a host that has protected virtual machines, or that is used to recover virtual machines, is powered off. A warning is issued when a VRA on a host that does not have protected virtual machines, or that is not used to recover virtual machines, is powered off."
+   },
+   "VRA0029": {
+      "Alert Name": "VRA memory low",
+      "Severity": "Warning",
+      "Alert Description": "On ESX/ESXi 4.x: The VRA does not have enough resources."
+   },
+   "VRA0030": {
+      "Alert Name": "Journal size mismatch",
+      "Severity": "Warning",
+      "Alert Description": "A previous configuration update of the journal for a specific virtual machine in the VPG failed. You need to update the journal size in the VPG for this virtual machine."
+   },
+   "VRA0032": {
+      "Alert Name": "Local VRA version out-of-date",
+      "Severity": "Warning",
+      "Alert Description": "A newer version of the VRAs is available. At least one VRA on the (local) site has not been upgraded to this newer version."
+   },
+   "VRA0033": {
+      "Alert Name": "Peer VRA out-of-date",
+      "Severity": "Warning",
+      "Alert Description": "A newer version of VRA is available. One or more of the peer sites VRAs have not been upgraded to this newer version."
+   },
+   "VRA0035": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VRA0036": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VRA0037": {
+      "Alert Name": "Local MAC Address Conflict",
+      "Severity": "Error",
+      "Alert Description": "A VRA or Zerto Cloud Connector has the same MAC address as the specified entity."
+   },
+   "VRA0038": {
+      "Alert Name": "MAC Address Conflict",
+      "Severity": "Error",
+      "Alert Description": "There is a MAC conflict between the entity and VRAs or Zerto Cloud Connectors from different sites."
+   },
+   "VRA0039": {
+      "Alert Name": "Journal reached configured limit",
+      "Severity": "Error",
+      "Alert Description": "A journal size hard limit is configured and the size of the journal has reached this limit. Older checkpoints in the journal might be removed to enable adding new checkpoints reducing the history saved in the journal."
+   },
+   "VRA0040": {
+      "Alert Name": "Journal space low",
+      "Severity": "Warning",
+      "Alert Description": "A journal size hard limit is configured and the size of the journal has reached this limit. Older checkpoints in the journal might be removed to enable adding new checkpoints reducing the history saved in the journal."
+   },
+   "VRA0049": {
+      "Alert Name": "Host rollback failed",
+      "Severity": "Error",
+      "Alert Description": "An operation required rolling back failed, for example if the installation of a VRA on the host failed and rolling back to the pre-installation state is performed."
+   },
+   "VRA0050": {
+      "Alert Name": "Wrong host password",
+      "Severity": "Warning",
+      "Alert Description": "The password the VRA uses to access the ESXi host has been changed and the VRA can no longer access the host"
+   },
+   "VRA0051": {
+      "Alert Name": "DEPRECATED",
+      "Severity": "DEPRECATED",
+      "Alert Description": "DEPRECATED"
+   },
+   "VRA0052": {
+      "Alert Name": "Disk visible but not recognized",
+      "Severity": "Warning",
+      "Alert Description": "Zerto Virtual Manager sees a disk on a VRA that it does not recognize."
+   },
+   "VRA0053": {
+      "Alert Name": "System disk removed",
+      "Severity": "Error",
+      "Alert Description": "Zerto Virtual Manager does not find a system disk on VRA {recovery_VRA_virtual_machine_name} on host {host_name}."
+   },
+   "VRA0054": {
+      "Alert Name": "VRA journal alert in public cloud",
+      "Severity": "Error",
+      "Alert Description": "The VRA is unable to access the journal in the cloud storage."
+   },
+   "VRA0055": {
+      "Alert Name": "VRA target volume alert in public cloud",
+      "Severity": "Error",
+      "Alert Description": "The VRA is unable to access the target disks in the cloud storage."
+   },
+   "VRA0056": {
+      "Alert Name": "VRA is shutting down",
+      "Severity": "Warning",
+      "Alert Description": "The VRA on the host will wait for the protected virtual machines to be vMotioned or up to 10 minutes, whichever occurs first, before shutting down automatically, to enable host maintenance."
+   },
+   "ZCA0001": {
+      "Alert Name": "Storage removed",
+      "Severity": "Error",
+      "Alert Description": "The storage used for the replicated data managed by the VRA in ZCA is not found."
+   },
+   "ZCA0002": {
+      "Alert Name": "Quota of instances number exceeded",
+      "Severity": "Warning",
+      "Alert Description": "The maximum number of instances per {instance type} was reached. Any additional instance creation will be queued, potentially increasing the RTO. To increase change the maximum allowed instances of type {instance type}, contact AWS support."
+   },
+   "ZCA0003": {
+      "Alert Name": "Zerto AWS Snapshot Manager not reachable",
+      "Severity": "Error",
+      "Alert Description": "Could not connect to zASA and configure it. zASA state is unknown."
+   },
+   "ZCC0001": {
+      "Alert Name": "Zerto Cloud Connector removed",
+      "Severity": "Error",
+      "Alert Description": "When an event occurs, for example the host machine crashes or the cloud connector is accidentally deleted, the cloud connector is displayed as a ghost Cloud Connector."
+   },
+   "ZCC0002": {
+      "Alert Name": "Zerto Cloud Connector powered off",
+      "Severity": "Error",
+      "Alert Description": "A ZCC installation failed. The error for that failure should have more information. This can happen due to many reasons, such as hypervisor manager, VMware vCenter Server and Microsoft SCVMM, problems, out of disk space, etc."
+   },
+   "ZCC0003": {
+      "Alert Name": "Orphaned Zerto Cloud Connector",
+      "Severity": "Warning",
+      "Alert Description": "The status of the Zerto Cloud Connector is orphaned, for example when one of the specified networks is invalid or inaccessible or that the ports to access the connector are blocked in the Zerto Virtual Manager."
+   },
+   "ZCM0001": {
+      "Alert Name": "No connection to Zerto Virtual Manager",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Cloud Manager could not connect to the Zerto Virtual Manager using the specified IP and port"
+   },
+   "ZCM0002": {
+      "Alert Name": "Zerto Cloud Manager not supported",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Cloud Manager is not supported with the current license. Check your license and contact your account manager."
+   },
+   "ZVM0001": {
+      "Alert Name": "No connection to hypervisor manager, such as VMware vCenter Server and Microsoft SCVMM, or to public cloud.",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Virtual Manager running on the specified site cannot connect to either the hypervisor manager, such as VMware vCenter Server or Microsoft SCVMM, or to cloud services (AWS or Microsoft Azure)."
+   },
+   "ZVM0002": {
+      "Alert Name": "No connection to VRA",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Virtual Manager has lost communication with a VRA. This means that no new checkpoints can be written to the journals of any protected virtual machines whose recovery is managed by this VRA."
+   },
+   "ZVM0003": {
+      "Alert Name": "No connection to site",
+      "Severity": "Error",
+      "Alert Description": "The connection between the local Zerto Virtual Manager and the remote Zerto Virtual Manager is down."
+   },
+   "ZVM0004": {
+      "Alert Name": "Peer ZVM version out-of-date",
+      "Severity": "Warning",
+      "Alert Description": "A newer version of Zerto is available. One or more of the peer site's Zerto has not been upgraded to this newer version."
+   },
+   "ZVM0005": {
+      "Alert Name": "Zerto Virtual Manager space low",
+      "Severity": "Warning",
+      "Alert Description": "The drive where the Zerto Virtual Manager is installed is too full and some space needs to be freed up."
+   },
+   "ZVM0006": {
+      "Alert Name": "Upgrade available",
+      "Severity": "Warning",
+      "Alert Description": "One of the sites is running a later version."
+   },
+   "ZVM0007": {
+      "Alert Name": "Cannot upgrade",
+      "Severity": "Warning",
+      "Alert Description": "You can only upgrade Zerto to one version higher with full protection maintained. One of the sites is already running a version one version higher but an upgrade to this is also available."
+   },
+   "ZVM0008": {
+      "Alert Name": "Version mismatch",
+      "Severity": "Error",
+      "Alert Description": "The two sites are running different versions of Zerto that are not compatible one with the other."
+   },
+   "ZVM0009": {
+      "Alert Name": "Internal error",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Virtual Manager has entered an error state."
+   },
+   "ZVM0010": {
+      "Alert Name": "Synchronization between Zerto Virtual Managers",
+      "Severity": "Warning",
+      "Alert Description": "The local site and peer site Zerto Virtual Managers are being synchronized with each other."
+   },
+   "ZVM0011": {
+      "Alert Name": "Metadata collection",
+      "Severity": "Warning",
+      "Alert Description": "The Zerto Virtual Manager cannot collect metadata describing the host. The virtual machines on this host cannot be protected and protected virtual machines cannot be recovered to this host."
+   },
+   "ZVM0012": {
+      "Alert Name": "Metadata collection",
+      "Severity": "Error",
+      "Alert Description": "The Zerto Virtual Manager cannot collect SCSI adapter information from the host for the virtual machine in the VPG."
+   },
+   "ZVM0013": {
+      "Alert Name": "Metadata collection",
+      "Severity": "Warning",
+      "Alert Description": "The Zerto Virtual Manager cannot communicate with the host to access the details about the host."
+   },
+   "ZVM0014": {
+      "Alert Name": "VRA/Diskbox SCSI GUID mismatch",
+      "Severity": "Warning",
+      "Alert Description": "The SCSI adapter identifiers retrieved from SCVMM do not match the identifiers retrieved from the VM configuration on the Hyper-V host."
+   },
+   "ZVM0015": {
+      "Alert Name": "Hyper-V host state",
+      "Severity": "Error/Warning",
+      "Alert Description": "The Zerto Virtual Manager cannot communicate with the host so it cannot retrieve host information"
+   },
+   "ZVM0016": {
+      "Alert Name": "Failed to load tweaks",
+      "Severity": "Error",
+      "Alert Description": "A problem occurred during loading and parsing the ZVM tweaks file. Unrecognised tweaks will not be applied."
+   },
+   "ZVM0017": {
+      "Alert Name": "Protected VM with unknown OS",
+      "Severity": "Warning",
+      "Alert Description": "The VM’s OS type is not specified in SCVMM."
+   },
+   "ZVM0019": {
+      "Alert Name": "Agent disconnected / Failed to open channe",
+      "Severity": "Error",
+      "Alert Description": "Agent disconnected."
+   },
+   "ZVM0020": {
+      "Alert Name": "Agent installation failed",
+      "Severity": "Error",
+      "Alert Description": "Agent installation failed on host."
+   },
+   "ZVM0021": {
+      "Alert Name": "VRA-H powered off",
+      "Severity": "Error",
+      "Alert Description": "The diskbox located on the host is powered off."
+   }
+}
